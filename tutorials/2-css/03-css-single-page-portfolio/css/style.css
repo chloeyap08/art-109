@@ -1,0 +1,111 @@
+/* CSS resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+html {
+    font-size: 100%;
+}
+
+
+/* General CSS */
+
+body {
+    /* background-color: #a8d2da; */
+    background-image: url("../images/clouds.jpg");
+    background-color: #cccccc;
+    font-family: Optima, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+header {
+    /* background-color: #7db8ca; */
+    margin-bottom: 2rem;
+    padding: 3rem;
+    color: #324f77;
+    border-bottom: 0.2rem solid #324f77;
+    /* text-align: center; */
+
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #324f77;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+main {
+
+}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    margin-bottom: 4rem;
+}
+
+.about-content,
+.portfolio-item,
+.contact-form {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
+}
+
+.about-content h2,
+.portfolio-item h2,
+.contact-form h2 {
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    margin-bottom: 4rem;
+    background-color: #9ab8c1;
+    padding: 4rem;
+    text-align: justify;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 8px rgb(37, 101, 123);
+    border: 2px #2f4e75 solid;
+
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #748fb1;
+    color: #263f62;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    text-align: end;
+}
