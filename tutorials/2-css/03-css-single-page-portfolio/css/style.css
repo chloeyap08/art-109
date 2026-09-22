@@ -1,39 +1,76 @@
-/* CSS resets */
+/* ~~~~~~~~~~~~~ color palette ~~~~~~~~~~~~~~ */
+
+
+:root {
+    --bg-color-1: #a8d2da;
+    --bg-color-2: #cccccc;
+    --font-color: #334358;
+    --accent-1: #63bcca;
+    --accent-2: #9260e8;
+    --dark: #263f62; 
+}
+
+
+
+
+/* ~~~~~~~~~~~~~ CSS resets ~~~~~~~~~~~~~~ */
 
 * {
     margin: 0;
     padding: 0;
 }
 
-/* respect user font size preferences */
+/* ~~~~~~~~~~~~~ respect user font size preferences ~~~~~~~~~~~~~~*/
 html {
     font-size: 100%;
 }
 
 
-/* General CSS */
+/* ~~~~~~~~~~~~ General CSS ~~~~~~~~~~~~~~ */
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
-    /* background-color: #a8d2da; */
+    background-color: var(--bg-color-1);
+    color: var(--font-color);
     background-image: url("../images/clouds.jpg");
-    background-color: #cccccc;
+    background-color: var(--bg-color-2);
     font-family: Optima, sans-serif;
     font-size: 1.25rem;
     line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 1rem;
+    }
 }
 
 header {
     /* background-color: #7db8ca; */
     margin-bottom: 2rem;
     padding: 3rem;
-    color: #324f77;
-    border-bottom: 0.2rem solid #324f77;
+    color: var(--font-color);
+    border-bottom: 0.2rem solid var(--font-color);
     /* text-align: center; */
 
 }
 
+@media (max-width: 700px) {
+    header {
+        padding-left: 2rem;
+    }
+}
+
 header h1 {
     font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-style:dotted;
+    text-decoration-color: #63bcca;
 }
 
 nav {
@@ -44,14 +81,40 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #324f77;
+    color: var(--font-color);
     display: inline-block;
     margin: 0 1rem;
+    transition: all 1s ease;
+}
+
+nav a:hover {
+    color: var(--bg-color-2);
+    transform: scale(1.2);
+}
+
+@media (max-width: 750px) {
+    nav a {
+        margin: 0.5rem;
+    }
 }
 
 main {
-
+    margin: 0;
 }
+
+@media (max-width: 850px) {
+    main {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
+}
+
+
 
 .about-section,
 .portfolio-section,
@@ -75,14 +138,28 @@ main {
 
 .portfolio-item {
     margin-bottom: 4rem;
-    background-color: #9ab8c1;
+    background-color: var(--bg-color-2);
     padding: 4rem;
-    text-align: justify;
+    /* text-align: justify; */
     border-radius: 1rem;
-    box-shadow: 0px 8px 8px rgb(37, 101, 123);
-    border: 2px #2f4e75 solid;
+    box-shadow: 0px 8px 8px rgb(38, 63, 98);
+    border: 2px var(--dark) solid;
 
 }
+
+@media (max-width: 800px) {
+    .portfolio-item {
+        padding: 3rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .portfolio-item {
+        padding: 2rem;
+    }
+}
+
 
 .portfolio-item img {
     max-width: 100%;
@@ -100,12 +177,22 @@ main {
 }
 
 footer {
-    background-color: #748fb1;
-    color: #263f62;
+    background-color: var(--bg-color-2);
+    color: var(--dark);
     padding: 1rem;
 }
 
 footer p {
     font-size: 1rem;
     text-align: end;
+}
+
+
+/* Style classes */
+
+.accent-1 {
+    color: var(--accent-1);
+}
+.accent-2 {
+    color: var(--accent-2);
 }
