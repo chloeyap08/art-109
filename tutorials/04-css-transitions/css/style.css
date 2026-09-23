@@ -1,0 +1,40 @@
+
+
+
+.title {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.square {
+    background-color: rgb(108, 208, 183);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 50px auto;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.square:hover {
+    background-color: rgb(175, 88, 188);
+    transform: rotate(45deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color:rgb(255, 255, 255);
+    background-color: rgb(138, 159, 204);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover {
+    background-color: rgb(46, 78, 97);
+    color:black;
+    transform: scale(1.5);
+}

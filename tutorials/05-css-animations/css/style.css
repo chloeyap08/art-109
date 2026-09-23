@@ -1,0 +1,84 @@
+body {
+    animation: color-color 4s infinite alternate;
+}
+
+@keyframes color-color {
+    0% {
+        background-color: #c47acc;
+    }
+
+    50% {
+        background-color: #8e7689;
+    }
+
+    100% {
+        background-color: #8a425c;
+    }
+}
+
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 2s infinite alternate;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    100% {
+        transform: skew(20deg, 20deg);
+    }
+}
+
+.square {
+    background-color: #6cd0b7;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 50px auto;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.square:hover {
+    background-color: #af58bc;
+    transform: rotate(45deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #8a9fcc;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover {
+    background-color: #2e4e61;
+    color: black;
+    transform: scale(1.5);
+}
+
+.loading {
+    background-color: #5b3131;
+    animation: stretch 5s infinite alternate;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 80vw;
+    }
+}
