@@ -1,8 +1,8 @@
 body {
-    animation: color-color 4s infinite alternate;
+    animation: background-color 4s infinite alternate;
 }
 
-@keyframes color-color {
+@keyframes background-color {
     0% {
         background-color: #c47acc;
     }
