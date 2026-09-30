@@ -2,11 +2,11 @@
 
 
 :root {
-    --bg-color-1: #a8d2da;
+    --bg-color-1: #789aa0;
     --bg-color-2: #cccccc;
     --font-color: #334358;
     --accent-1: #63bcca;
-    --accent-2: #9260e8;
+    --accent-2: #604c84;
     --dark: #263f62; 
 }
 
@@ -69,7 +69,7 @@ header {
 header h1 {
     font-size: 3rem;
     text-decoration: underline;
-    text-decoration-style:dotted;
+    text-decoration-style: wavy;
     text-decoration-color: #63bcca;
 }
 
@@ -120,6 +120,7 @@ main {
 .portfolio-section,
 .contact-section {
     margin-bottom: 4rem;
+    margin: 4rem;
 }
 
 .about-content,
