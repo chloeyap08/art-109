@@ -44,7 +44,3 @@ img1.addEventListener("click", () => {
 img2.addEventListener("click", () => {
     img3.classList.remove("hidden");
 });
-
-img3.addEventListener("click", () => {
-    img3.classList.toggle("hidden");
-});

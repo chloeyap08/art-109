@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/baguetteBox.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Chloe Yap</h1>
+            </div>
+            <div class="nav">
+                <button class="hamburger">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#portfolio-section">Work</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="about-section" id="about-section">
+            <div class="about-content">
+                <h2><span class="accent-2">⋆˚꩜｡</span>About Me</h2>
+                <p>Hi! My name is Chloe Yap. I am a student at SJSU studying Digital Media Arts. I am interested in web
+                    development and design,
+                    and I love creating interactive and visually appealing websites. In my free time, I enjoy gaming,
+                    journaling, and reading.</p>
+            </div>
+        </section>
+        <section class="portfolio-section" id="portfolio-section">
+            <div class="portfolio-content">
+                <h2>My Work</h2>
+                <div class="flex-container-grid">
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="images/bauhaus.png" data-caption="World of Bauhaus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. "><img src="images/bauhaus.png"
+                                alt="bauhaus magazine" width="800" height="500"></a>
+                        <h3>Bauhaus Magazine</h3>
+                        <p>This is an editorial design project. It showcases a Bauhaus-inspired magazine.</p>
+
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="images/homebuilders.jpg" data-caption="The Blue Collars"><img
+                                src="images/homebuilders.jpg" alt="home builder project" width="800" height="500"></a>
+                        <h3>Home Builder Project</h3>
+                        <p>This is a redesign of a home builder company. I included a cover letter, business cards, and
+                            postcards.</p>
+
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="images/saulbass.jpg" data-caption="World of Saul Bass"><img src="images/saulbass.jpg"
+                                alt="saul bass poster" width="800" height="500"></a>
+                        <h3>Saul Bass Poster</h3>
+                        <p>This is a poster design. It showcases a stylized version of Saul Bass and his description.
+                        </p>
+
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="images/salvadordali.jpg" data-caption="Dreamy Scape"><img src="images/salvadordali.jpg"
+                                alt="salvador dali artwork" width="400" height="600"></a>
+                        <h3>Dreamy Escape</h3>
+                        <p>This is a design that was inspired by Salvador Dali's surreal art artstyle.</p>
+
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="images/bauhaus.png" data-caption="World of Bauhaus"><img src="images/bauhaus.png"
+                                alt="bauhaus magazine" width="800" height="500"></a>
+                        <h3>Bauhaus Magazine</h3>
+                        <p>This is an editorial design project. It showcases a Bauhaus-inspired magazine.</p>
+
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/homebuilders.jpg" alt="home builder project" width="800" height="500">
+                        <h3>Home Builder Project</h3>
+                        <p>This is a redesign of a home builder company. I included a cover letter, business cards, and
+                            postcards.</p>
+
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/saulbass.jpg" alt="saul bass poster" width="800" height="500">
+                        <h3>Saul Bass Poster</h3>
+                        <p>This is a poster design. It showcases a stylized version of Saul Bass and his description.
+                        </p>
+
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/salvadordali.jpg" alt="salvador dali artwork" width="400" height="600">
+                        <h3>Dreamy Escape</h3>
+                        <p>This is a design that was inspired by Salvador Dali's surreal art artstyle.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <div class="contact-content">
+                <h2>Contact Me</h2>
+                <p>Email: chloeyaphoyee@gmail.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex-container">
+        <p>&copy; 2026 Chloe Yap. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/icon-logo-instagram.png" alt=""></a>
+            <a href="#"><img src="images/icon-logo-twitter.png" alt=""></a>
+            <a href="#"><img src="images/icon-logo-youtube.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run(".flex-container-grid" , {
+            captions: true
+        })
+    </script>
+</body>
+
+</html>
